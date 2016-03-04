@@ -11,6 +11,8 @@ This very simple demo shows how to import JSNLog in an ES6 NodeJs application an
 5. *gulp* to build the project. This transpiles *es6Demo/es6/main.js* into *es6Demo/main.js*;
 6. *node main.js* to run the transpiled file. jsnlog will write a log message to the command line.
 
+Note that Babel transpiles the ES6 *import* statement to a CommonJs *require*. While you still have to use Babel instead of native ES6, use  [Browserify](http://jsnlog.com/Documentation/HowTo/LoadingJsFile#browserify) if you want to use the ES6 *import* statement on the client.  
+
 ##About JSNLog##
 
 [JSNLog](http://jsnlog.com) is a client side JavaScript logging package that automatically logs to your server side log.
